@@ -1,0 +1,29 @@
+ALGORITHM SAVE_DONORS
+
+START
+
+OPEN donors.txt in write mode
+
+IF file opening fails THEN
+    DISPLAY "Unable to open donor file"
+    RETURN FAILURE
+END IF
+
+FOR each donor record
+
+    WRITE donor ID
+    WRITE donor name
+    WRITE blood group
+    WRITE age
+    WRITE phone number
+    WRITE last donation date
+
+    WRITE one donor per line
+
+END FOR
+
+CLOSE file
+
+RETURN SUCCESS
+
+END
