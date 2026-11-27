@@ -1,0 +1,32 @@
+ALGORITHM UPDATE_STOCK
+
+START
+
+INPUT blood group
+INPUT number of units
+INPUT operation
+
+SEARCH for matching blood group
+
+IF blood group is found THEN
+
+    IF operation = ADD THEN
+        INCREASE available units
+    ELSE IF operation = REMOVE THEN
+
+        IF available units >= requested units THEN
+            DECREASE available units
+        ELSE
+            DISPLAY "Insufficient stock"
+            RETURN FAILURE
+        END IF
+
+    END IF
+
+    DISPLAY "Stock updated successfully"
+
+ELSE
+    DISPLAY "Blood group not found"
+END IF
+
+END
