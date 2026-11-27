@@ -1,0 +1,45 @@
+ALGORITHM MAIN
+
+START
+
+READ argc AND argv
+
+IF argc < 2 THEN
+    DISPLAY "Invalid command"
+    DISPLAY usage instructions
+    STOP
+END IF
+
+IF argv[1] = "find" THEN
+
+    CHECK number of arguments
+    VALIDATE blood group
+    FIND requested blood group
+    DISPLAY available stock
+
+ELSE IF argv[1] = "issue" THEN
+
+    CHECK number of arguments
+    VALIDATE blood group
+    VALIDATE number of units
+    CHECK available stock
+
+    IF enough stock is available THEN
+        UPDATE stock
+        DISPLAY remaining stock
+    ELSE
+        DISPLAY "Insufficient stock"
+    END IF
+
+ELSE IF argv[1] = "stock" THEN
+
+    DISPLAY all stock details
+
+ELSE
+
+    DISPLAY "Unknown command"
+    DISPLAY usage instructions
+
+END IF
+
+END
