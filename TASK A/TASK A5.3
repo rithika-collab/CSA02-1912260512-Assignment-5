@@ -1,0 +1,18 @@
+ALGORITHM SAVE_STOCK
+
+START
+
+OPEN stock.dat in binary write mode
+
+IF file opening fails THEN
+    DISPLAY "Unable to open stock file"
+    RETURN FAILURE
+END IF
+
+WRITE all stock records using fwrite()
+
+CLOSE file
+
+RETURN SUCCESS
+
+END
