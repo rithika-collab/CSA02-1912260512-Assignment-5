@@ -1,0 +1,27 @@
+ALGORITHM FIND_DONORS
+
+START
+
+eligibleCount = 0
+youngestAge = maximum possible age
+youngestDonorID = -1
+
+FOR each donor in donorRecords
+
+    IF donor blood group matches AND donor is eligible THEN
+
+        eligibleCount = eligibleCount + 1
+
+        IF donor age < youngestAge THEN
+            youngestAge = donor age
+            youngestDonorID = donor ID
+        END IF
+
+    END IF
+
+END FOR
+
+RETURN eligibleCount
+RETURN youngestDonorID
+
+END
