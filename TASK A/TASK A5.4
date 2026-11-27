@@ -1,0 +1,39 @@
+ALGORITHM UPDATE_STOCK_FILE
+
+START
+
+OPEN stock.dat in read and write binary mode
+
+IF file opening fails THEN
+    RETURN FAILURE
+END IF
+
+FOR each record position
+
+    MOVE file pointer using fseek()
+
+    READ stock record using fread()
+
+    IF blood group matches THEN
+
+        UPDATE units
+
+        MOVE file pointer back using fseek()
+
+        WRITE updated record using fwrite()
+
+        CLOSE file
+
+        RETURN SUCCESS
+
+    END IF
+
+END FOR
+
+CLOSE file
+
+DISPLAY "Blood group not found"
+
+RETURN FAILURE
+
+END
