@@ -1,0 +1,20 @@
+ALGORITHM SAVE_DONORS
+
+START
+
+OPEN donor file in write mode
+
+IF file opening fails THEN
+    DISPLAY "Unable to open donor file"
+    RETURN FAILURE
+END IF
+
+FOR each donor record
+    WRITE donor details into file
+END FOR
+
+CLOSE file
+
+RETURN SUCCESS
+
+END
