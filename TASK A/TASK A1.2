@@ -1,0 +1,20 @@
+ALGORITHM CHECK_ELIGIBILITY
+
+START
+
+READ donor age
+READ last donation date
+READ current date
+READ eligibility policy
+
+IF donor age is outside permitted age range THEN
+    RETURN NOT ELIGIBLE
+END IF
+
+IF minimum donation interval is not completed THEN
+    RETURN NOT ELIGIBLE
+END IF
+
+RETURN ELIGIBLE
+
+END
