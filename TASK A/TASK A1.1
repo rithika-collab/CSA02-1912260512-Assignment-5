@@ -1,0 +1,24 @@
+ALGORITHM REGISTER_DONOR
+
+START
+
+IF donorCount = capacity THEN
+    DISPLAY "Donor storage is full"
+    RETURN FAILURE
+END IF
+
+INPUT donor ID
+INPUT donor name
+INPUT blood group
+INPUT age
+INPUT phone number
+INPUT last donation date
+
+ADD donor details to donorRecords
+INCREASE donorCount
+
+DISPLAY "Donor registered successfully"
+
+RETURN SUCCESS
+
+END
