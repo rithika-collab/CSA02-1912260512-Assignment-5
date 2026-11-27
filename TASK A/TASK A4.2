@@ -1,0 +1,30 @@
+ALGORITHM ADD_DONOR
+
+START
+
+IF count = capacity THEN
+
+    newCapacity = capacity * 2
+
+    TEMPORARY = REALLOCATE donor list
+                to newCapacity records
+
+    IF TEMPORARY = NULL THEN
+        DISPLAY "Memory allocation failed"
+        RETURN FAILURE
+    END IF
+
+    donors = TEMPORARY
+    capacity = newCapacity
+
+END IF
+
+donors[count] = newDonor
+
+count = count + 1
+
+DISPLAY "Donor added successfully"
+
+RETURN SUCCESS
+
+END
