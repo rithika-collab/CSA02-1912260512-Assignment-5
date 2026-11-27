@@ -1,0 +1,21 @@
+ALGORITHM FIND_LOWEST_STOCK
+
+START
+
+IF count = 0 THEN
+    RETURN NULL
+END IF
+
+lowest = ADDRESS OF stock[0]
+
+FOR i = 1 TO count - 1
+
+    IF stock[i] < VALUE AT lowest THEN
+        lowest = ADDRESS OF stock[i]
+    END IF
+
+END FOR
+
+RETURN lowest
+
+END
