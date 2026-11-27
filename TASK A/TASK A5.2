@@ -1,0 +1,23 @@
+ALGORITHM LOAD_DONORS
+
+START
+
+OPEN donors.txt in read mode
+
+IF file opening fails THEN
+    RETURN FAILURE
+END IF
+
+WHILE another donor record is available
+
+    READ one line
+    PARSE donor details
+    ADD donor to dynamic donor list
+
+END WHILE
+
+CLOSE file
+
+RETURN SUCCESS
+
+END
