@@ -18,3 +18,24 @@ CLOSE file
 RETURN SUCCESS
 
 END
+
+ALGORITHM LOAD_DONORS
+
+START
+
+OPEN donor file in read mode
+
+IF file opening fails THEN
+    RETURN FAILURE
+END IF
+
+WHILE another donor record is available
+    READ donor details
+    ADD donor to donorRecords
+END WHILE
+
+CLOSE file
+
+RETURN SUCCESS
+
+END
