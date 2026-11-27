@@ -1,14 +1,14 @@
-# ASSIGNMENT 5 – STORAGE CLASSES IN C
+ASSIGNMENT 5 – STORAGE CLASSES IN C
 
-## Student Details
-- **Student Name:RITHIKA SREE V
-- **Register Number:1912260512
-- **Subject:** C Programming
-- **Assignment:** 5 – Storage Classes
+ Student Details
+Student Name:RITHIKA SREE V
+Register Number:1912260512
+Subject: C Programming
+Assignment: 5 – Storage Classes
 
-## Compiler Details
-- **Compiler:** GCC (GNU Compiler Collection)
-- **Compiler Version:** Check using the command:
+ Compiler Details
+Compiler: GCC (GNU Compiler Collection)
+Compiler Version: Check using the command:
 
 ```bash
 gcc --version
